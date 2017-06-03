@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+
+
+{% block main %}
+    <article class="post post-{{ post.pk }}">
+        <header class="entry-header">
+            <h1 class="entry-title">{{ post.title }}</h1>
+            <div class="entry-meta">
+              <span class="post-category"><a href="#">{{ post.category.name }}</a></span>
+              <span class="post-date"><a href="#"><time class="entry-date"
+                                                        datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
+              <span class="post-author"><a href="#">{{ post.author }}</a></span>
+              <span class="comments-link"><a href="#">4 评论</a></span>
+              <span class="views-count"><a href="#">{{ post.views }} 阅读</a></span>
+            </div>
+        </header>
+        <div class="entry-content clearfix">
+            {{ post.body|safe }}
+        </div>
+        <!-- 文章分享JiaThis Button BEGIN -->
+            <div class="jiathis_style_32x32">
+                <a class="jiathis_button_qzone"></a>
+                <a class="jiathis_button_tsina"></a>
+                <a class="jiathis_button_tqq"></a>
+                <a class="jiathis_button_weixin"></a>
+                <a class="jiathis_button_renren"></a>
+                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                <a class="jiathis_counter_style"></a>
+            </div>
+            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+            <!-- JiaThis Button END -->
+    </article>
+
+    <section class="comment-area">
+          ...
+    </section>
+{% endblock main %}
+
+{% block toc %}
+
+        <div class="widget widget-content">
+            <h3 class="widget-title">文章目录</h3>
+            <ul>
+                <aside>
+                  <!-- 由于 toc 的值为一段 HTML 文本，所以要使用 safe 标签过滤 -->
+                  {{ toc|safe }}
+                </aside>
+            </ul>
+        </div>
+
+{% endblock toc %}
+
+
