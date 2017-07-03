@@ -1,0 +1,21 @@
+
+Client:('192.168.23.5', 52776)	Command:Connect                       	Time:2016-12-27 17:06:41           
+Client:('192.168.23.8', 56238)	Command:Connect                       	Time:2016-12-27 17:06:43           
+Client:('192.168.23.5', 52776)	Command:Wrong command                 	Time:2016-12-27 17:06:52           
+Client:('192.168.23.5', 52776)	Command:Wrong command                 	Time:2016-12-27 17:06:52           
+Client:('192.168.23.5', 52776)	Command:Wrong command                 	Time:2016-12-27 17:06:56           
+Client:('192.168.23.5', 52776)	Command:['help']                      	Time:2016-12-27 17:06:59           
+Client:('192.168.23.5', 52776)	Command:['ls']                        	Time:2016-12-27 17:07:10           
+Client:('192.168.23.5', 52776)	Command:['get', 'test2.mp3']          	Time:2016-12-27 17:07:37           
+Client:('192.168.23.5', 52776)	Command:['get', 'asdasd', 'File not exist']	Time:2016-12-27 17:07:45           
+Client:('192.168.23.8', 56238)	Command:['ls']                        	Time:2016-12-27 17:07:54           
+Client:('192.168.23.8', 56238)	Command:['get', 'ftp.log']            	Time:2016-12-27 17:08:02           
+Client:('192.168.23.8', 56238)	Command:['local']                     	Time:2016-12-27 17:08:10           
+Client:('192.168.23.5', 52776)	Command:['local']                     	Time:2016-12-27 17:08:43           
+Client:('192.168.23.5', 52776)	Command:['ls']                        	Time:2016-12-27 17:09:27           
+Client:('192.168.23.5', 52776)	Command:['ls']                        	Time:2016-12-27 17:09:31           
+Client:('192.168.23.8', 56238)	Command:['ls']                        	Time:2016-12-27 17:09:44           
+Client:('192.168.23.8', 56238)	Command:['local']                     	Time:2016-12-27 17:09:50           
+Client:('192.168.23.8', 56238)	Command:['send', 'test1.mp4']         	Time:2016-12-27 17:10:07           
+Client:('192.168.23.8', 56238)	Command:['ls']                        	Time:2016-12-27 17:10:09           
+Client:('192.168.23.5', 52776)	Command:['quit']                      	Time:2016-12-27 17:13:10           
